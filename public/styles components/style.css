@@ -1,0 +1,535 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #000;
+}
+
+.container-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+}
+
+header {
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    top: 0;
+    height: 120px;
+}
+
+header .logo-netflix img {
+    width: 100%;
+    height: 110px;
+}
+
+header .header-buttons select {
+    padding: .25rem;
+    margin: 0 20px;
+    font-size: .875rem;
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+header .header-buttons select option {
+    background: rgba(0, 0, 0, .4);
+    color: #fff;
+}
+
+header .header-buttons button {
+    padding: 7px 17px;
+    cursor: pointer;
+    background-color: #e50914;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: .975rem;
+    border-radius: 4px;
+    font-weight: 350;
+}
+
+
+/* Main */
+
+main {
+    position: relative;
+    width: 100%;
+    min-height: 76vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../images/Background\ Netflix.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+main .overlay-shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #141414a1, rgba(0, 0, 0, 0.70));
+}
+
+main .content-text-main {
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+    color: #fff;
+}
+
+main .content-text-main h1 {
+    font-size: 3.7rem;
+    font-weight: bold;
+}
+
+main .content-text-main p {
+    font-size: 1.45rem;
+    margin-bottom: 15px;
+}
+
+main .content-text-main h6 {
+    font-size: 1.15rem;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+main .content-text-main .error-email {
+    color: #ffa00a;
+    text-align: left !important;
+    visibility: hidden;
+    font-size: .80rem;
+    margin-top: 10px;
+}
+main .content-text-main .error-email.active {
+    visibility: visible;
+}
+
+.send-dices {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.send-dices button {
+    width: 30%;
+    background-color: #e50914;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.3rem;
+}
+
+.send-dices button:hover {
+    background-color: rgb(244, 6, 18);
+}
+
+.send-dices .input-dices {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.7rem;
+}
+
+.send-dices input {
+    width: 100%;
+    padding: 22px;
+    font-size: 1.1rem;
+    outline: none;
+}
+
+.send-dices label {
+    position: absolute;
+    left: 3%;
+    font-weight: 500;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: .950rem;
+    transition: .1s;
+    color: rgb(146, 146, 146);
+}
+
+.send-dices label.active {
+    top: 23%;
+    font-size: .75rem;
+    transition: .1s;
+}
+
+#info-section {
+    width: 100%;
+    min-height: 50vh;
+    border-top: 8px solid #222;
+    border-bottom: 8px solid #222;
+    border-bottom: 8px solid #222;
+}
+
+
+/* Auxiliar Sections */
+
+.container-section {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40vh;
+    padding: 70px 45px;
+}
+
+#info-section .container-section .text-watch-tv {
+    color: #fff;
+    width: 50%;
+}
+
+#info-section .container-section .text-watch-tv h1 {
+    font-size: 3rem;
+}
+
+#info-section .container-section .text-watch-tv p {
+    font-size: 1.5rem;
+}
+
+#info-section .container-section .tv {
+    position: relative;
+    width: 50%
+}
+
+#info-section .container-section .tv img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+#info-section .container-section .tv .story-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    transform: translate(-50.1%, -55%);
+    left: 50%;
+    max-height: 54%;
+}
+
+#info-section .container-section .tv video {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Section Download Series */
+
+#download-series {
+    width: 100%;
+    min-height: 50vh;
+    border-bottom: 8px solid #222;
+    display: flex;
+    align-items: center;
+}
+
+#download-series .container-section .images-series-download {
+    position: relative;
+}
+
+#download-series .container-section .images-series-download #strangerThings {
+    width: 450px;
+}
+
+#download-series .container-section .images-series-download .div-downloaded {
+    position: absolute;
+    display: flex;
+    border: solid 4px #222;
+    border-radius: 10px;
+    height: 100px;
+    background-color: #000;
+    justify-content: space-between;
+    padding: 10px;
+    width: 400px;
+    bottom: 40px;
+    align-items: center;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+#download-series .container-section .images-series-download .div-downloaded img {
+    object-fit: cover;
+    height: 4.5em;
+}
+
+#download-series .container-section .images-series-download .div-downloaded h3 {
+    color: #fff;
+    font-size: .885rem;
+    font-weight: 400;
+}
+
+#download-series .container-section .images-series-download .div-downloaded p {
+    color: #0071eb;
+    font-size: .800rem;
+    font-weight: 400;
+}
+
+#download-series .container-section .text-annoucements-download {
+    color: #fff;
+    width: 50%;
+}
+
+#download-series .container-section .text-annoucements-download h1 {
+    font-size: 3rem;
+}
+
+#download-series .container-section .text-annoucements-download p {
+    font-size: 1.6rem;
+}
+
+
+/* Landing Watchins Multiples Devices */
+
+#watching-devices {
+    border-bottom: 8px solid #222;
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+}
+
+#watching-devices .text-devices {
+    color: #fff;
+    width: 50%;
+}
+
+#watching-devices .text-devices h1 {
+    font-size: 3rem;
+}
+
+#watching-devices .text-devices p {
+    font-size: 1.5rem;
+}
+
+#watching-devices .images-devices {
+    width: 50%;
+    position: relative;
+    text-align: right;
+    z-index: 2;
+}
+
+#watching-devices .images-devices img {
+    height: auto;
+    max-width: 100%;
+    z-index: 2;
+    position: relative;
+}
+
+#watching-devices .images-devices .storys-devices {
+    position: absolute;
+    height: auto;
+    z-index: 1;
+    top: 34%;
+    overflow: hidden;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    max-width: 63%;
+    max-height: 47%;
+}
+
+
+/* Landing Watchins for Kids */
+
+#landing-kids {
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    border-bottom: 8px solid #222;
+    align-items: center;
+}
+
+#landing-kids .images-kids img {
+    max-width: 80%;
+    height: auto;
+}
+
+#landing-kids .text-kids {
+    color: #fff;
+    width: 50%;
+}
+
+#landing-kids .text-kids h1 {
+    font-size: 3rem;
+}
+
+#landing-kids .text-kids p {
+    font-size: 1.3rem;
+}
+
+
+/* Landing Asked Questions */
+
+#asked-questions {
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: #fff;
+    border-bottom: 9px solid #222;
+    padding: 50px 0;
+}
+
+#asked-questions h6 {
+    margin: 30px 0;
+    font-size: .95rem;
+    font-weight: 350;
+}
+
+#asked-questions .title-asked {
+    margin-bottom: 25px;
+}
+
+#asked-questions .title-asked h1 {
+    font-size: 3rem;
+}
+
+#asked-questions ul {
+    width: 50%;
+    position: relative;
+    margin: 2em auto;
+}
+
+#asked-questions ul li {
+    width: 100%;
+    margin: 5px 0;
+    list-style-type: none;
+}
+
+#asked-questions ul li button {
+    padding: .8em 2.2em .8em 1.2em;
+    margin-bottom: 1px;
+    font-weight: 400;
+    position: relative;
+    background-color: #303030;
+    text-align: left;
+    cursor: pointer;
+    color: #fff;
+    width: 100%;
+    border: 0;
+    font-size: 25px;
+}
+
+#asked-questions ul li .text-asked {
+    background-color: #303030;
+    border-top: 1px solid #000;
+    padding: 20px;
+    text-align: left;
+    font-size: 1.4rem;
+    transition: ease-in-out .3s;
+    visibility: hidden;
+    display: none;
+    opacity: 0;
+}
+
+#asked-questions ul li .text-asked.active {
+    visibility: visible;
+    display: flex;
+    opacity: 1;
+    transition: ease-in-out .3s;
+}
+
+#asked-questions ul li button i {
+    color: #fff;
+    position: absolute;
+    right: 20px;
+}
+
+#asked-questions ul li button i.active {
+    visibility: hidden;
+}
+
+#asked-questions ul li button #closeBox {
+    visibility: hidden;
+}
+
+#asked-questions ul li button #closeBox.active {
+    visibility: visible;
+}
+
+footer .container-footer {
+    min-height: 50vh;
+    color: #757575;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 70px 40px;
+}
+
+footer .container-footer .title-footer h3{
+    font-weight: 450;
+    margin-bottom: 20px;
+}
+
+footer .container-footer .list-itens {
+    width: 100%;
+}
+
+footer .container-footer ul {
+    list-style-type: none;
+    width: 100%;
+}
+
+
+footer .container-footer ul li {
+    display: inline-block;
+    box-sizing: border-box;
+    min-width: 100px;
+    width: 20%;
+    margin-right: 40px;
+}
+
+footer .container-footer ul li a {
+    color: #757575;
+    font-size: 13px;
+}
+
+footer .container-footer ul li a {
+    text-decoration: none;
+}
+
+footer .container-footer ul li a:hover {
+    border-bottom: 1px solid #757575;
+}
+
+
+footer .container-footer .box-language select {
+    margin: 30px 0;
+    border: 1px solid #333;
+    background-color: transparent;
+    border-radius: 3px;
+    color: #757575;
+    padding: 10px 30px;
+    font-weight: 450;
+    font-size: 15px;
+}
+
+footer .container-footer .box-language select option {
+    background-color: #000;
+}
+
+footer .container-footer  p {
+    font-size: 14px;
+}

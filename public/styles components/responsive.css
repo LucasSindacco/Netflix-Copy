@@ -1,0 +1,24 @@
+@media screen and (max-width: 890px) {
+    .container-section {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+    }
+    main .content-text-main .send-dices {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    main .content-text-main .send-dices button {
+        font-size: 1rem;
+        min-height: 40px;
+        width: 150px;
+        margin: 10px 0;
+    }
+    main .content-text-main label {
+        top: 27%;
+    }
+    main .content-text-main label.active  {
+        top: 10%;
+    }
+}

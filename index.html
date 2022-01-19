@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Import CSS -->
+    <link rel="stylesheet" href="public/styles components/style.css">
+    <!-- Import Responsive CSS -->
+    <link rel="stylesheet" href="public/styles components/responsive.css">
+    <!-- Import Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+    <!-- Import Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Netflix</title>
+</head>
+
+<body>
+    <header>
+        <div class="container-flex">
+            <div class="logo-netflix">
+                <img src="public/images/LogoType - Netflix.png" alt="">
+            </div>
+            <div class="header-buttons">
+                <select name="language" id="">
+                    <option value="portuguese">Português</option>
+                    <option value="English">English</optsion>
+                </select>
+                <button id="sendEmail">Entrar</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="overlay-shadow"></div>
+        <div class="content-text-main">
+            <h1>Filmes, séries e muito <br> mais. Sem limites.</h1>
+            <p>Assista onde quiser. Cancele quando quiser.</p>
+            <h6>Pronto para assistir? Informe seu email para criar ou reiniciar sua assinatura.</h6>
+            <div class="send-dices">
+                <div class="input-dices">
+                    <input id="inputEmail" type="email">
+                    <label for="" id="emai-label">Email</label>
+                </div>
+                <button id="send-button">Vamos Lá <i class="fas fa-chevron-right"></i></button>
+            </div>
+            <p class="error-email">O email é obrigatório.</p>
+        </div>
+    </main>
+    <section id="info-section">
+        <div class="container-section">
+            <div class="text-watch-tv">
+                <h1>Aproveite na TV.</h1>
+                <p>Assista em Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, aparelhos de Blu-ray e outros dispositivos.</p>
+            </div>
+            <div class="tv">
+                <img src="public/images/tv.png" alt="">
+                <div class="story-video">
+                    <video src="public/videos/Netflix Vídeo.mp4" autoplay="true" loop muted></video>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="download-series">
+        <div class="container-section">
+            <div class="images-series-download">
+                <img src="public/images/Stranger Things.jpg" alt="" id="strangerThings">
+                <div class="div-downloaded">
+                    <div class="image-serie">
+                        <img src="public/images/Netflix Stranger Things.png" alt="">
+                    </div>
+                    <div class="text-serie">
+                        <h3>Stranger Things</h3>
+                        <p>Download em andamento...</p>
+                    </div>
+                    <div class="gif-downlodade">
+                        <img src="public/images/Icon Gif.gif" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="text-annoucements-download">
+                <h1>Baixe séries para assistir offline.</h1>
+                <p>Salve seus títulos favoritos e sempre tenha algo para assistir.</p>
+            </div>
+        </div>
+    </section>
+    <section id="watching-devices">
+        <div class="container-section">
+            <div class="text-devices">
+                <h1>Assista quando <br> quiser</h1>
+                <p>Assista no celular, tablet, Smart TV ou notebook sem pagar a mais por isso.</p>
+            </div>
+            <div class="images-devices">
+                <img src="public/images/device-pile.png" alt="">
+                <div class="storys-devices">
+                    <video src="public/videos/video-devices.mp4" autoloop="true" controls play></video>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="landing-kids">
+        <div class="container-section">
+            <div class="images-kids">
+                <img src="public/images/kids.png" alt="">
+            </div>
+            <div class="text-kids">
+                <h1>Crie perfis para crianças.</h1>
+                <p>Deixe as crianças se aventurarem com seus personagens favoritos em um espaço feito só para elas, sem pagar a mais por isso.</p>
+            </div>
+        </div>
+    </section>
+    <section id="asked-questions">
+        <div class="title-asked">
+            <h1>Perguntas Frequentes</h1>
+        </div>
+        <ul>
+            <li>
+                <button>O que é a netflix? <i id="open-box" class="fas fa-plus"></i> <i id="closeBox" class="fas fa-times"></i></button>
+                <div class="text-asked">
+                    <p>A Netflix é um serviço de transmissão online que oferece uma ampla variedade de séries, filmes e documentários premiados em milhares de aparelhos conectados à internet. Você pode assistir a quantos filmes e séries quiser, quando e
+                        onde quiser, sem comerciais – tudo por um preço mensal bem acessível. Aqui você sempre encontra novidades. A cada semana, adicionamos novas séries e filmes.</p>
+                </div>
+            </li>
+            <li>
+                <button>Quanto custa a netflix? <i id="open-box" class="fas fa-plus"></i> <i id="closeBox" class="fas fa-times"></i></button>
+                <div class="text-asked">
+                    <p>A Netflix é um serviço de transmissão online que oferece uma ampla variedade de séries, filmes e documentários premiados em milhares de aparelhos conectados à internet. Você pode assistir a quantos filmes e séries quiser, quando e
+                        onde quiser, sem comerciais – tudo por um preço mensal bem acessível. Aqui você sempre encontra novidades. A cada semana, adicionamos novas séries e filmes.</p>
+                </div>
+            </li>
+            <li>
+                <button>Onde posso assistir? <i id="open-box" class="fas fa-plus"></i> <i id="closeBox" class="fas fa-times"></i></button>
+                <div class="text-asked">
+                    <p>A Netflix é um serviço de transmissão online que oferece uma ampla variedade de séries, filmes e documentários premiados em milhares de aparelhos conectados à internet. Você pode assistir a quantos filmes e séries quiser, quando e
+                        onde quiser, sem comerciais – tudo por um preço mensal bem acessível. Aqui você sempre encontra novidades. A cada semana, adicionamos novas séries e filmes.</p>
+                </div>
+            </li>
+            <li>
+                <button>Como faço para cancelar? <i id="open-box" class="fas fa-plus"></i> <i id="closeBox" class="fas fa-times"></i></button>
+                <div class="text-asked">
+                    <p>A Netflix é um serviço de transmissão online que oferece uma ampla variedade de séries, filmes e documentários premiados em milhares de aparelhos conectados à internet. Você pode assistir a quantos filmes e séries quiser, quando e
+                        onde quiser, sem comerciais – tudo por um preço mensal bem acessível. Aqui você sempre encontra novidades. A cada semana, adicionamos novas séries e filmes.</p>
+                </div>
+            </li>
+            <li>
+                <button>O que eu posso assistir na Netflix? <i id="open-box" class="fas fa-plus"></i> <i id="closeBox" class="fas fa-times"></i></button>
+                <div class="text-asked">
+                    <p>A Netflix é um serviço de transmissão online que oferece uma ampla variedade de séries, filmes e documentários premiados em milhares de aparelhos conectados à internet. Você pode assistir a quantos filmes e séries quiser, quando e
+                        onde quiser, sem comerciais – tudo por um preço mensal bem acessível. Aqui você sempre encontra novidades. A cada semana, adicionamos novas séries e filmes.</p>
+                </div>
+            </li>
+            <li>
+                <button>A Netflix adequada para as crianças? <i id="open-box" class="fas fa-plus"></i> <i id="closeBox" class="fas fa-times"></i></button>
+                <div class="text-asked">
+                    <p>A Netflix é um serviço de transmissão online que oferece uma ampla variedade de séries, filmes e documentários premiados em milhares de aparelhos conectados à internet. Você pode assistir a quantos filmes e séries quiser, quando e
+                        onde quiser, sem comerciais – tudo por um preço mensal bem acessível. Aqui você sempre encontra novidades. A cada semana, adicionamos novas séries e filmes.</p>
+                </div>
+            </li>
+        </ul>
+        <h6>Pronto para assistir? Informe seu email para criar ou reiniciar sua assinatura.</h6>
+        <div class="Signature" style="width: 40%;">
+            <div class="send-dices">
+                <div class="input-dices">
+                    <input id="inputEmail" type="email">
+                    <label for="" id="emai-label">Email</label>
+                </div>
+                <button id="send-button">Vamos Lá <i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container-footer">
+            <div class="title-footer">
+                <h3>Dúvidas? Ligue 0800-761-4631</h3>
+            </div>
+            <div class="list-itens">
+                <ul>
+                    <li><a href="#">Perguntas frequentes</a></li>
+                    <li><a href="#">Centro ajuda</a></li>
+                    <li><a href="#">Conta</a></li>
+                    <li><a href="#">Media Center</a></li>
+                    <li><a href="#">Relações com investidores</a></li>
+                    <li><a href="#">Carreiras</a></li>
+                    <li><a href="#">Resgatar cartão pré pago</a></li>
+                    <li><a href="#">Comprar cartão pré pago</a></li>
+                    <li><a href="#">Formas de assistir</a></li>
+                    <li><a href="#">Termos de uso</a></li>
+                    <li><a href="#">Privacidade</a></li>
+                    <li><a href="#">Preferências de Cookies</a></li>
+                    <li><a href="#">Informações corporativas</a></li>
+                    <li><a href="#">Entre em contato</a></li>
+                    <li><a href="#">Teste de velocidade</a></li>
+                    <li><a href="#">Avisos legais</a></li>
+                    <li><a href="#">Só na Netflix</a></li>
+                </ul>
+            </div>
+            <div class="box-language">
+                <select name="" id="">
+                    <option value="portuguese">Português</option>
+                    <option value="english">English</option>
+                </select>
+            </div>
+            <p>Netflix Brasil</p>
+        </div>
+    </footer>
+    <script src="public/scripts/app.js"></script>
+</body>
+
+</html>

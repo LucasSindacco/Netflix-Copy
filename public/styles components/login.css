@@ -1,0 +1,170 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+header .logotype-netflix {
+    position: absolute;
+    top: 10px;
+    z-index: 3;
+}
+
+header .logotype-netflix img {
+    width: 100%;
+    height: 110px;
+}
+
+
+main {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../images/Login\ -\ Netflix\ BG.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+main .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.60);
+}
+
+main .container-login  {
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 3;
+    color: #fff;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+main .container-login form {
+    text-align: left;
+    width: 470px;
+    border-radius: 10px;
+    min-height: 600px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 60px 68px 40px;
+    background-color: rgba(0,0,0,.75);
+}
+
+main .container-login form .informations-user {
+    position: relative;
+}
+
+main .container-login form .informations-user label {
+    position: absolute;
+    top: 50%;
+    font-size: .800rem;
+    left: 5%;
+    color: #8c8c8c;
+    transition: ease-in-out .1s;
+    transform: translateY(-50%);
+}
+main .container-login form .informations-user label.active {
+    top: 30%;
+    transition: ease-in-out .1s;
+    font-size: .600rem;
+}
+
+main .container-login form .password-user  {
+    position: relative;
+}
+
+main .container-login form .password-user label {
+    position: absolute;
+    top: 50%;
+    font-size: .800rem;
+    left: 5%;
+    color: #8c8c8c;
+    transform: translateY(-50%);
+    transition: ease-in-out .1s;
+}
+
+
+main .container-login form .password-user label.active  {
+    top: 30%;
+    transition: ease-in-out .1s;
+    font-size: .600rem;
+
+}
+
+main .container-login form input {
+    width: 100%;
+    padding: 16px;
+    background-color: #333;
+    margin: 10px 0;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    color: #fff;
+}
+
+main .container-login form input:focus {
+    background-color: #444;
+}
+
+main .container-login form input.error {
+    border-bottom: 2px solid #e87c03;
+}
+
+main .container-login form button {
+    width: 100%;
+    margin-top: 30px;
+    background-color: #e50914;
+    padding: 12px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    color: #fff;
+}
+
+main .container-login form p {
+    color: #e87c03;
+    visibility: hidden;
+    font-size: .80rem;
+    display: none;
+}
+main .container-login form p.error {
+    visibility: visible;
+    display: flex;
+}
+
+main .container-login form .check-remember {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+
+main .container-login form .check-remember input[type="checkbox"] {
+    width: 10% !important;
+}
+
+main .container-login form .check-remember span {
+    position: relative;
+    left: -25px;
+    color: #8c8c8c;
+    font-size: .920rem;
+}
+
+main .container-login form .check-remember a{
+    color: #8c8c8c;
+    text-decoration: none;
+    font-size: .80rem;
+}
+main .container-login form .check-remember a:hover {
+    border-bottom: 1px solid #8c8c8c;
+}
